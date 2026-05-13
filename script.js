@@ -40,7 +40,7 @@ const projects = {
   touchibo: {
     title: "Touchibo",
     keywords: "social robot, group interaction",
-    image: "assets/projects/touchibo.jpg",
+    image: "assets/projects/touchibo-animation.gif",
     link: "https://yh7580.wixsite.com/work/touchibo",
   },
   touchiboRobot: {
@@ -90,8 +90,7 @@ const projects = {
   skin: {
     title: "Robot Skin",
     keywords: "soft robot, creative prototyping",
-    video: "assets/projects/skin.mp4",
-    image: "assets/projects/skin-cover.gif",
+    image: "assets/projects/skin-stitched.gif",
     link: "https://yh7580.wixsite.com/work/skin",
   },
   goosebumps: {
