@@ -1,0 +1,172 @@
+:root {
+  --paper: #fff;
+  --ink: #111;
+  --muted: #222;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background: var(--paper);
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.home {
+  min-height: 100svh;
+  padding: 72px clamp(20px, 4vw, 56px) 54px;
+}
+
+.portfolio-title {
+  display: grid;
+  justify-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.wordmark {
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 0.28em;
+}
+
+h1 {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.33em;
+}
+
+h1 span {
+  color: #ef1f25;
+  font-weight: 700;
+}
+
+.project-wall {
+  width: min(100%, 980px);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  align-items: start;
+}
+
+.project-column {
+  display: grid;
+  gap: 8px;
+  align-content: start;
+}
+
+.project-tile {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  background: transparent;
+}
+
+.project-tile img,
+.project-tile video {
+  display: block;
+  width: 100%;
+  height: auto;
+  filter: grayscale(1);
+  transition: filter 160ms ease, transform 160ms ease;
+}
+
+.project-tile.skin-focus {
+  aspect-ratio: 1.45 / 1;
+}
+
+.project-tile.skin-focus video {
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 72%;
+}
+
+.project-tile::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 50%, rgba(0, 0, 0, 0.48));
+  opacity: 0;
+  transition: opacity 160ms ease;
+}
+
+.project-tile:hover img,
+.project-tile:focus-visible img,
+.project-tile:hover video,
+.project-tile:focus-visible video {
+  transform: scale(1.01);
+}
+
+.project-tile:hover::after,
+.project-tile:focus-visible::after {
+  opacity: 1;
+}
+
+.tile-label {
+  position: absolute;
+  z-index: 2;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  display: grid;
+  gap: 5px;
+  color: #fff;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 160ms ease, transform 160ms ease;
+}
+
+.project-tile:hover .tile-label,
+.project-tile:focus-visible .tile-label {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.tile-label strong {
+  font-size: 12px;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.tile-label span {
+  font-size: 10px;
+  line-height: 1.25;
+}
+
+@media (max-width: 720px) {
+  .home {
+    padding: 46px 18px 34px;
+  }
+
+  .project-wall {
+    gap: 6px;
+  }
+
+  .project-column {
+    gap: 6px;
+  }
+
+  .wordmark {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 11px;
+    letter-spacing: 0.22em;
+  }
+}
