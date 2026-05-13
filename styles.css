@@ -23,40 +23,54 @@ a {
 
 .home {
   min-height: 100svh;
-  padding: 72px clamp(20px, 4vw, 56px) 54px;
+  padding: 54px clamp(16px, 3vw, 44px) 46px;
 }
 
 .portfolio-title {
   display: grid;
-  justify-items: center;
+  justify-items: start;
   gap: 12px;
-  margin-bottom: 24px;
-  text-align: center;
+  width: min(100%, 1225px);
+  margin-inline: auto;
+  margin-bottom: 28px;
+  text-align: left;
 }
 
 .wordmark {
+  margin-bottom: 16px;
   font-size: 18px;
   line-height: 1;
   font-weight: 700;
   letter-spacing: 0.28em;
+  justify-self: center;
 }
 
 h1 {
   margin: 0;
+  width: min(100%, 760px);
+  max-width: 760px;
   font-size: 15px;
-  line-height: 1;
+  line-height: 1.55;
   font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 0.33em;
+  text-transform: none;
+  letter-spacing: 0.12em;
+  text-align: left;
 }
 
-h1 span {
-  color: #ef1f25;
-  font-weight: 700;
+.title-quote {
+  margin: 0;
+  width: min(100%, 760px);
+  max-width: 760px;
+  color: #111;
+  font-size: 15px;
+  line-height: 1.55;
+  font-style: normal;
+  letter-spacing: 0.12em;
+  text-align: left;
 }
 
 .project-wall {
-  width: min(100%, 980px);
+  width: min(100%, 1225px);
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
