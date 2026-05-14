@@ -30,7 +30,7 @@ a {
   position: relative;
   display: grid;
   justify-items: start;
-  gap: 22px;
+  gap: 16px;
   width: min(100%, 1125px);
   margin-inline: auto;
   margin-bottom: 34px;
@@ -43,16 +43,6 @@ a {
   line-height: 1;
   font-weight: 700;
   letter-spacing: 0.28em;
-}
-
-.sketch-logo {
-  position: absolute;
-  top: -34px;
-  right: 0;
-  width: clamp(180px, 18vw, 270px);
-  height: auto;
-  display: block;
-  opacity: 0.92;
 }
 
 .title-statement {
@@ -258,16 +248,14 @@ h1 {
 
 .news-list {
   display: grid;
-  max-width: 900px;
-  border-top: 1px solid #d8d8d8;
+  width: 100%;
 }
 
 .news-item {
   display: grid;
   grid-template-columns: 112px minmax(0, 1fr);
   gap: 24px;
-  padding: 15px 0 16px;
-  border-bottom: 1px solid #d8d8d8;
+  padding: 10px 0 11px;
 }
 
 .news-item time {
@@ -284,6 +272,10 @@ h1 {
   font-size: 13px;
   line-height: 1.55;
   letter-spacing: 0.035em;
+}
+
+.news-item strong {
+  font-weight: 700;
 }
 
 .news-item a {
