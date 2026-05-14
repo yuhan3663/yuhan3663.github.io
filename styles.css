@@ -136,6 +136,16 @@ h1 {
   object-position: 50% 38%;
 }
 
+.project-tile--wideShort {
+  aspect-ratio: 1.76 / 1;
+}
+
+.project-tile--wideShort img {
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 64%;
+}
+
 .project-tile img,
 .project-tile video {
   display: block;
@@ -306,7 +316,8 @@ h1 {
     font-size: 14px;
   }
 
-  h1 {
+  h1,
+  .title-quote {
     font-size: 11px;
     letter-spacing: 0.22em;
   }

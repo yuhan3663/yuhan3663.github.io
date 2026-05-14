@@ -101,9 +101,10 @@ const projects = {
   },
   swarms: {
     title: "Human-Robot Swarms",
-    keywords: "evacuation robot",
-    image: "assets/projects/swarms.jpg",
+    keywords: "human evacuation robot, robot locomotion and navigation",
+    image: "assets/projects/swarms-bladder-cropped.jpg",
     link: "https://yh7580.wixsite.com/work/swarms",
+    crop: "wideShort",
   },
 };
 
