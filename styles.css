@@ -23,7 +23,7 @@ a {
 
 .home {
   min-height: 100svh;
-  padding: clamp(82px, 10vh, 128px) clamp(16px, 3vw, 44px) 46px;
+  padding: 48px clamp(16px, 3vw, 44px) 46px;
 }
 
 .portfolio-title {
@@ -33,12 +33,12 @@ a {
   gap: 22px;
   width: min(100%, 1125px);
   margin-inline: auto;
-  margin-bottom: clamp(340px, 50vh, 620px);
+  margin-bottom: 34px;
   text-align: left;
 }
 
 .wordmark {
-  margin-top: clamp(170px, 23vh, 300px);
+  margin-top: 0;
   font-size: 18px;
   line-height: 1;
   font-weight: 700;
@@ -47,7 +47,7 @@ a {
 
 .sketch-logo {
   position: absolute;
-  top: clamp(34px, 5vh, 72px);
+  top: -34px;
   right: 0;
   width: clamp(180px, 18vw, 270px);
   height: auto;
